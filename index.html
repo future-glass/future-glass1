@@ -1,0 +1,130 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUTURE GLASS AND ALUMINIUM</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+  body { direction: rtl; background-color: #ffffff; color: #222; }
+  header { position: sticky; top: 0; z-index: 1000; background-color: #ffffffcc; backdrop-filter: blur(6px); border-bottom: 1px solid #d7d7d7; padding: 6px 22px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: 0.3s ease; }
+  .logo-container img { height: 90px; object-fit: contain; }
+  nav ul { list-style: none; display: flex; gap: 35px; }
+  nav ul li a { color: #007acc; font-weight: 600; text-decoration: none; font-size: 16px; transition: color 0.3s ease; }
+  nav ul li a:hover { color: #004d80; }
+  .contact-btn { padding: 10px 18px; background-color: #007acc; color: white; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.3s ease; }
+  .contact-btn:hover { background-color: #005c99; transform: translateY(-2px); }
+  main { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+  .intro-box { background: rgba(0, 122, 204, 0.08); backdrop-filter: blur(4px); border-right: 6px solid #007acc; padding: 25px 25px; margin-bottom: 50px; border-radius: 14px; text-align: right; transition: 0.35s ease; box-shadow: 0 4px 12px rgba(0,0,0,0.06); animation: fadeInRight 0.8s ease forwards; }
+  .intro-box:hover { background: rgba(0, 122, 204, 0.15); transform: translateX(-8px) scale(1.01); box-shadow: 0 7px 22px rgba(0,122,204,0.28); }
+  .intro-box h2 { color:#007acc; margin-bottom:12px; font-size:1.6rem; font-weight:700; }
+  .intro-box p { font-size: 1.15rem; line-height: 1.9; color: #333; }
+  @keyframes fadeInRight { 0% { opacity: 0; transform: translateX(30px); } 100% { opacity: 1; transform: translateX(0); } }
+  main h1 { font-size: 2.5rem; color: #007acc; margin-bottom: 20px; text-align: center; }
+  main p { font-size: 1.15rem; line-height: 1.6; color: #444; margin-bottom: 40px; text-align: center; }
+  .products { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+  .product-card { width: 300px; border: 1px solid #dcdcdc; border-radius: 7px; box-shadow: 0 3px 7px rgba(0,0,0,0.05); overflow: hidden; background-color: #fff; transition: box-shadow 0.3s ease; display: flex; flex-direction: column; }
+  .product-card:hover { box-shadow: 0 7px 20px rgba(0,122,204,0.25); }
+  .product-card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+  .product-info { padding: 15px 20px; flex-grow: 1; }
+  .product-info h3 { font-size: 1.3rem; margin-bottom: 10px; color: #007acc; }
+  .product-info p { font-size: 1rem; color: #555; line-height: 1.4; }
+  .why-us { max-width: 1000px; margin: 50px auto; padding: 25px 20px; background-color: #f5faff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,122,204,0.1); text-align: center; }
+  .why-us h2 { font-size: 2rem; color: #007acc; margin-bottom: 35px; }
+  .features { display: flex; flex-wrap: wrap; gap: 25px; justify-content: center; }
+  .feature { width: 220px; text-align: center; padding: 15px; transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; background-color: white; }
+  .feature:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,122,204,0.2); }
+  .feature img { width: 50px; margin-bottom: 15px; }
+  .feature h3 { font-size: 1.2rem; color: #007acc; margin-bottom: 8px; }
+  .feature p { font-size: 0.95rem; color: #555; line-height: 1.4; }
+  footer { background-color: #007acc; color: white; text-align: center; padding: 20px 10px; margin-top: 60px; font-size: 1rem; }
+  footer p { margin: 5px 0; }
+  footer a { color: #caf0f8; text-decoration: none; font-weight: 600; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 768px) { nav ul { gap: 15px; } .products { gap: 20px; } }
+  @media (max-width: 450px) { header { flex-direction: column; justify-content: center; gap: 15px; } nav ul { flex-wrap: wrap; justify-content: center; } main h1 { font-size: 2rem; } .intro-box { font-size: 1rem; line-height: 1.6; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo-container">
+    <img src="photos/glass.jpg" alt="FUTURE GLASS AND ALUMINIUM Logo" />
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">من نحن</a></li>
+      <li><a href="products.html">منتجاتنا</a></li>
+      <li><a href="#">خدماتنا</a></li>
+      <li><a href="#">اتصل بنا</a></li>
+    </ul>
+  </nav>
+  <a href="tel:+966539372775" class="contact-btn">اتصل الآن</a>
+</header>
+<main>
+  <div class="intro-box">
+    <h2>نخدمك بأعلى مستوى</h2>
+    <p>نصنع لك ومن أجلك وكما تتخيل ..</p>
+    <p>إذا كنت تبحث عن شبابيك الألمنيوم الأنيقة، أسقف زجاجية عالية الجودة، واجهات عصرية، أو أبواب بتصاميم راقية، فمصنعنا يقدم لك الحلول المثالية بمعايير تفوق توقعاتك.</p>
+  </div>
+  <h1>مرحبا بكم في FUTURE GLASS AND ALUMINIUM</h1>
+  <p>نقدم أفضل حلول الزجاج والألومنيوم بأعلى جودة وأحدث التقنيات.</p>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://www.mornglass.com/wp-content/uploads/2020/05/thermal-break-windows.jpg" alt="نوافذ" />
+      <div class="product-info">
+        <h3>نوافذ</h3>
+        <p>تصاميم عالية الجودة لعزل حراري وصوتي متطورة.</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://www.glassdoorfactory.com/uploadfile/2023/07/11/20230711152652W8Upl7.jpg" alt="أبواب زجاجية" />
+      <div class="product-info">
+        <h3>أبواب زجاجية</h3>
+        <p>تصاميم عصرية وأنيقة بأفضل خامات الألمنيوم والزجاج.</p>
+      </div>
+    </div>
+    <div class="product-card">
+      <img src="https://rwaq2030.com/wp-content/uploads/2025/04/%D9%86%D8%B8%D8%A7%D9%85-%D9%87%D8%B1%D9%85%D9%8A.jpg" alt="اسقف زجاجية" />
+      <div class="product-info">
+        <h3>اسقف زجاجية</h3>
+        <p>مناسبة للمنازل والمكاتب بتصاميم راقية.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <h2>لماذا تختار FUTURE GLASS AND ALUMINIUM؟</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/007acc/clock.png" alt="التزام بالمواعيد"/>
+        <h3>التزام بالمواعيد</h3>
+        <p>ننفذ المشاريع في الوقت المحدد بدقة عالية.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/007acc/checked.png" alt="جودة عالية"/>
+        <h3>جودة عالية</h3>
+        <p>نستخدم أفضل المواد وأحدث التقنيات في أعمالنا.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/007acc/teamwork.png" alt="فريق محترف"/>
+        <h3>فريق محترف</h3>
+        <p>خبرة طويلة وفريق متخصص في كل تفاصيل الزجاج والألومنيوم.</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/007acc/idea.png" alt="تصاميم مبتكرة"/>
+        <h3>تصاميم مبتكرة</h3>
+        <p>نبتكر حلول مميزة تناسب كل الاحتياجات.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>اتصل بنا: <a href="tel:+966539372775">+966539372775</a></p>
+  <p>تابعنا على تيك توك: <a href="https://www.tiktok.com/@glassaluminumservices?_t=ZS-90Tw2ZUa2bs&_r=1" target="_blank">@glassaluminumservices</a></p>
+  <p>&copy; 2024 FUTURE GLASS AND ALUMINIUM. جميع الحقوق محفوظة.</p>
+</footer>
+</body>
+</html>
